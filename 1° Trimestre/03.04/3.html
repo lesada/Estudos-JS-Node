@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <center>
+
+       <h1>Números entre 1.000 e 2.000 que divididos por 11 produzem resto igual a 5:</h1> 
+        
+        <br/>
+        
+        <button type="button" id="bt1" onclick="realiza()"> Mostra  </button>
+
+        <p id="resultado"></p>
+       
+        <center/>
+
+
+    <script>
+
+         function realiza() {
+
+        var cont= 0;
+        var i=1000;
+
+        while (i<=2000 ) {
+
+        i ++
+
+        if ((i%11 )==5) {
+            cont += ((i)+"<br/>" );
+        } 
+    
+       
+        }
+    
+    
+    document.getElementById ('resultado'). innerHTML= cont;
+         }
+
+    </script>
+
+    </body>
+</html>
+
+ 
+
+    
+    
+    
+    
+        

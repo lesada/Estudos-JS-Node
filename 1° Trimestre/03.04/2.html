@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+
+        <h1>Escolha a tabuada:</h1>
+
+    <br/>
+
+    <input type="number" id= "numeroinput">
+    <button type="button" id="bt" onclick="realiza()">  = </button>
+
+
+
+     <p id="resultado">Resultado da tabuada:</p>
+       
+
+    <script>
+
+         function realiza() {
+            var resultado= 0;
+            var i;
+            var numero = +document.getElementById("numeroinput").value;
+            
+
+        for ( i=0 ; i <=10; i++) {
+
+     resultado += ((numero * i)) + "<br/>";
+
+        }
+        document.getElementById ('resultado'). innerHTML= resultado;
+
+}
+   
+    
+            
+    </script>
+
+
+
+
+
+    </body>
+</html>
+
+ 
+
+    
+    
+    
+    
+        

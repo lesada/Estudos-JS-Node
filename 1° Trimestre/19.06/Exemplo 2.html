@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividade 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function inicializar() {
+
+           let label= document.createElement("label");
+           let botao= document.createElement("button");
+           let input= document.createElement("input");
+           let button1= document.createElement("button");
+           let button2= document.createElement("button");
+           let lista= document.createElement("lista");
+           let input2= document.createElement("input");
+           let br1 = document.createElement("br"); 
+
+
+           label.innerText="Item ";
+           input.style.marginRight="10px";
+           input.style.marginTop="10px";   
+           input.style.marginRight="10px";
+           botao.innerText="ADD";
+
+
+
+           document.body.appendChild(label);
+           document.body.appendChild(input);
+           document.body.appendChild(input2);
+           document.body.appendChild(botao);
+           document.body.appendChild(lista);
+
+
+
+
+
+           botao.onclick=()=> {
+               let valor = input.value;
+               let valor2= input2.value;
+               let paragrafo= document.createElement("li");
+               paragrafo.innerText=valor + ":" + valor2;
+               lista.appendChild(paragrafo);
+               input.value="";
+               input2.value="";
+
+           };
+        }
+
+        window.addEventListener("load",inicializar);
+       
+    </script>
+</head>
+<body>
+</body>
+</html> 

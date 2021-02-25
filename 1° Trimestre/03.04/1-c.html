@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+        Digite um número inteiro positivo: <input  id="n" /> </br> </br>
+        <p  id="resultado" > </p>
+        <button type="button" id="bt" onclick="Faz()">Calcular    
+
+        
+<script>
+      
+       function Faz() {
+      
+        var numero = +document.getElementById("n").value; 
+        var contador;
+        var i = 0;
+
+        for (contador = 0; contador <= numero; contador++) {
+       
+            if ((contador%2) == 0) {
+
+                    i += contador; 
+
+                    } 
+    
+    
+       document.getElementById("resultado").innerHTML= i
+    }
+    }
+
+</script>
+
+      
+</body>
+</html>
+

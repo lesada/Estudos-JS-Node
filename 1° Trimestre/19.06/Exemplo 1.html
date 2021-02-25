@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Exemplo 1 </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function inicio() {
+
+// Cria as variaveis (let)
+            let label1 = document.createElement("label");
+let label2 = document.createElement("label");
+let label3 = document.createElement("label");
+let input1 = document.createElement("input");
+let input2 = document.createElement("input");
+let input3 = document.createElement("input");
+let button1 = document.createElement("button");
+let button2 = document.createElement("button");
+let br1 = document.createElement("br");
+let br2 = document.createElement("br");
+let br3 = document.createElement("br");
+
+let tabela = document.createElement("table");
+let cabecalho = document.createElement("tr");
+let nome = document.createElement("th");
+let email = document.createElement("th");
+let telefone = document.createElement("th");
+
+// Cria os textos (innerText)
+            label1.innerText="Nome: ";
+label2.innerText="E-mail: ";
+label3.innerText="Telefone: ";
+
+button1.innerText="Cadastrar";
+button2.innerText="Limpar";
+
+tabela.border = "1";
+nome.innerText = "Nome";
+email.innerText = "E-mail";
+telefone.innerText = "Telefone";
+
+// Cria os comandos (appendChild)
+document.body.appendChild(label1);
+document.body.appendChild(input1);
+document.body.appendChild(br1);
+
+document.body.appendChild(label2);
+document.body.appendChild(input2);
+document.body.appendChild(br2);
+
+document.body.appendChild(label3);
+document.body.appendChild(input3);
+document.body.appendChild(br3);
+
+document.body.appendChild(button1);
+document.body.appendChild(button2);
+
+cabecalho.appendChild(nome);
+cabecalho.appendChild(email);
+cabecalho.appendChild(telefone);
+tabela.appendChild(cabecalho);
+document.body.appendChild(tabela);	
+        }
+        window.addEventListener("load", inicio);
+
+    </script>
+</head>
+<body>
+</body>
+</html>
+

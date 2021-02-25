@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Arrays e Laços de repetição</title>
+        <meta charset="UTF-8">
+     
+        <script>
+            
+            function Realiza() {
+                
+                var numeros = document.getElementById("numerosinput").value;
+                var numeros = numeros.split(",");
+                var media = 0;
+                var resultado;
+
+
+
+                for (i = 0; i<numeros.length; i++){
+                    
+                        media = media + (+numeros[i]) ;
+
+                        resultado = (media / (numeros.length));
+
+
+
+                        document.getElementById("resultado1").innerHTML = resultado;
+
+                    }
+                
+            }
+                
+        </script>
+    </head>
+    <body>
+      
+            <h3>Digite as Notas Separadas Por Vírgulas (,):</h3>
+            <input type="text" id="numerosinput">
+            <button type="button" onclick="Realiza()">Mostrar</button><br/> <br/>
+            
+            Média das notas:
+
+            <p id="resultado1"></p>
+            
+        
+    </body>
+</html>

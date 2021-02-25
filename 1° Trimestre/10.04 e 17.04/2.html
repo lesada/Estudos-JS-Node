@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+
+    <script>
+
+            function realiza() {
+       
+                var nomes= document.getElementById("nomesinput").value;
+                var nomes=nomes.split (",");
+                var i= nomes.length;
+                var resultado = ""
+
+                
+              while (i>0) {
+                  i--;
+                  resultado += nomes [i] + "<br/>";
+              }           
+                document.getElementById ('Result'). innerHTML= resultado;
+                
+
+                }
+       
+           </script>
+    </head>
+
+    <body>
+    
+       <h1>Digite os Nomes Separados Por Vírgulas(,):</h1> 
+        
+        <br/>
+
+        <input type="text" id= "nomesinput"></br> </br>
+
+        Nomes Digitados Invertidos:
+
+        <p id="Result"></p> </br>
+        
+     
+        
+        <button type="button" id="bt1" onclick="realiza()"> Mostra  </button>

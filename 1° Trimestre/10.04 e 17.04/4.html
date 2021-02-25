@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Arrays e Laços de repetição</title>
+        <meta charset="UTF-8">
+     
+        <script>
+            
+            function realiza() {
+                
+                var numeros = document.getElementById("numerosinput").value;
+                numeros = numeros.split(",");
+                quadrado = [];
+
+                for (i=0;i<numeros.length;i++){
+                   
+                   quadrado [i]= (numeros[i]*numeros[i]);
+                   
+                }
+               
+                document.getElementById("resultado").innerHTML = quadrado;
+               
+        }
+                
+                    
+                
+                
+            
+            
+           
+        </script>
+    </head>
+    <body>
+      
+            <h3>Digite os Números Separados Por Vírgulas (,):</h3>
+            <input type="text" id="numerosinput">
+            <button type="button" onclick="realiza()">Mostrar</button><br/>   <br/>
+            Os números digitados ao quadrado são:
+            <p id="resultado"></p>
+        
+    </body>
+</html>
+

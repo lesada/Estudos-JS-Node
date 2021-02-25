@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script>
+        
+        function DefinirCores() {
+            var paragrafos = document.getElementsByTagName("p");
+            var cores = ["lightblue", "pink", "orange", "#9370DB"];
+            var i;
+            for ( i=0; i<paragrafos.length; i++) 
+            {
+                paragrafos[i].style.backgroundColor = cores [i];
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+<center>
+    <h1 id= "id h1"> Mundo do JavaScript</h1>
+    
+<p id="Cor1" >Cor 1 </p> 
+<p id="Cor2" >Cor 2</p> 
+<p id="Cor3" > Cor 3</p>  
+<p id="Cor4" > Cor 4 </p> 
+
+</br>
+
+    <button type="button" id="bt1" onclick="DefinirCores()">
+       Definir Cores </button>
+    </center>
+
+</body>
+
+</html>

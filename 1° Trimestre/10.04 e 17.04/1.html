@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+
+    <script>
+
+            function realiza() {
+       
+               var data= document.getElementById("datainput").value;
+               data=data.split ("/");
+
+              
+           
+                document.getElementById ('Dia'). innerHTML= data [0];
+                document.getElementById ('Mes'). innerHTML= data [1];
+                document.getElementById ('Ano'). innerHTML= data [2];
+
+                }
+       
+           </script>
+    </head>
+
+    <body>
+    
+       <h1>Digite a Data Separada por Barras (/):</h1> 
+        
+        <br/>
+
+        <input type="text" id= "datainput"></br> </br>
+
+        Dia : <p id="Dia"></p> </br>
+        Mês : <p id="Mes"></p> </br>
+        Ano : <p id="Ano"></p> </br>
+     
+        
+        <button type="button" id="bt1" onclick="realiza()"> Mostra  </button>
+
+
+    
+
+
+
+
+
+    </body>
+</html>
+
+ 
+
+    
+    
+    
+    
+        
